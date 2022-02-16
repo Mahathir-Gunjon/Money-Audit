@@ -15,37 +15,37 @@
                 <div class="row justify-content-around">
                     <h1 class="text-center pb-5 main-heading">Money Audit</h1>
                     <div class="col-lg-6">
-                      <img class="img-fluid rounded w-100" src="./image/audit.png" alt="">
+                      <img class="img-fluid rounded w-100" src="./image/inage.png" alt="">
                     </div>
                     <div class="col-lg-4 calculaton-part p-3">
                         <div class="my-5">
                             <h3 class="fs-4 my-2">Income</h3>
                         <div class="input-group">
                             <span class="input-group-text">Income</span>
-                            <input type="text" aria-label="First name" class="form-control">
+                            <input id="income-input" type="number" class="form-control">
                         </div>
                         </div>
                         <div class="mt-4">
                             <h3 class="fs-4 my-2">Expenses</h3>
                             <div class="input-group my-2">
                                 <span class="input-group-text">Food</span>
-                                <input type="number" aria-label="First name" class="form-control">
+                                <input id="food-input" type="number" aria-label="First name" class="form-control">
                             </div>
                             <div class="input-group my-2">
                                 <span class="input-group-text">Rent</span>
-                                <input type="text" aria-label="First name" class="form-control">
+                                <input id="rent-input" type="number" class="form-control">
                             </div>
                             <div class="input-group my-2">
                                 <span class="input-group-text">Clothes</span>
-                                <input type="text" aria-label="First name" class="form-control">
+                                <input id="clothe-input" type="number" class="form-control">
                             </div>
-                            <button class="btn btn-primary my-3" type="button">Calculate</button>
+                            <button id="calculation-button" class="btn btn-primary my-3">Calculate</button>
                         </div>
                         <br>
-                        <h3 class="fs-5 my-2">Total Expenses: <span></span></h3>
-                        <h3 class="fs-5 my-2">Balance: <span></span></h3>
+                        <h3 class="fs-5 my-2">Total Expenses: <span id="expense-total">00</span></h3>
+                        <h3 class="fs-5 my-2">Balance: <span id="balance-total">00</span></h3>
                         <div class="input-group my-5">
-                            <input type="text" class="form-control" placeholder="save your money from balance" aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <input type="number" class="form-control" placeholder="save your money from balance" aria-label="Recipient's username" >
                             <button class="btn btn-primary" type="button">Save</button>
                         </div>
                         <h3 class="fs-5 my-2">Saving Amount: <span></span></h3>
