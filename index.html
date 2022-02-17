@@ -5,56 +5,66 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Money Audit</title>
+    <!-- bootstrap CDN link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- external style sheet -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <main>
+        <!-- section part start here -->
         <section>
-            <div class="container mt-3 py-5 rounded-3" id="main-part">
+            <div class="container mt-4 py-3 rounded-3 " >
                 <div class="row justify-content-around">
-                    <h1 class="text-center pb-5 main-heading">Money Audit</h1>
+                    <!-- heading or title of the page -->
+                    <h1 class="text-center text-white mt-3 pb-5 main-heading fw-bold">Money Audit</h1>
+                    <!-- image part -->
                     <div class="col-lg-6">
-                      <img class="img-fluid rounded w-100" src="./image/inage.png" alt="">
+                      <img class="img-fluid border-radius w-100" src="./image/image.png" alt="">
                     </div>
-                    <div class="col-lg-4 calculaton-part p-3">
+                    <!-- input field ang calculation part start here -->
+                    <div class="col-lg-4 calculaton-part p-3 input-material rounded-3 shadow-lg mx-5">
                         <div class="my-5">
                             <h3 class="fs-4 my-2">Income</h3>
                         <div class="input-group">
                             <span class="input-group-text">Income</span>
-                            <input id="income-input" type="number" class="form-control">
+                            <input id="income-input" type="number" class="form-control" placeholder="Your income">
                         </div>
                         </div>
                         <div class="mt-4">
                             <h3 class="fs-4 my-2">Expenses</h3>
                             <div class="input-group my-2">
                                 <span class="input-group-text">Food</span>
-                                <input id="food-input" type="number" aria-label="First name" class="form-control">
+                                <input id="food-input" type="number" aria-label="First name" class="form-control" placeholder="monthly food cost">
                             </div>
                             <div class="input-group my-2">
                                 <span class="input-group-text">Rent</span>
-                                <input id="rent-input" type="number" class="form-control">
+                                <input id="rent-input" type="number" class="form-control" placeholder="monthly rent cost">
                             </div>
                             <div class="input-group my-2">
                                 <span class="input-group-text">Clothes</span>
-                                <input id="clothe-input" type="number" class="form-control">
+                                <input id="clothe-input" type="number" class="form-control" placeholder="monthly cloth cost">
                             </div>
-                            <button id="calculation-button" class="btn btn-primary my-3">Calculate</button>
+                            <div class="d-md-flex justify-content-md-end">
+                                <button id="calculation-button" class="btn btn-primary my-3">Calculate</button>
+                            </div>
                         </div>
-                        <br>
+                        <br> 
                         <h3 class="fs-5 my-2">Total Expenses: <span id="expense-total">00</span></h3>
                         <h3 class="fs-5 my-2">Balance: <span id="balance-total">00</span></h3>
+                        <!-- saving part start here -->
                         <div class="input-group my-5">
-                            <input type="number" class="form-control" placeholder="save your money from balance" aria-label="Recipient's username" >
-                            <button class="btn btn-primary" type="button">Save</button>
+                            <input id="saving-input" type="number" class="form-control" placeholder="save your money from balance" aria-label="Recipient's username" >
+                            <button id="saving" class="btn btn-primary" type="button">Save</button>
                         </div>
-                        <h3 class="fs-5 my-2">Saving Amount: <span></span></h3>
-                        <h3 class="fs-5 my-2">emaining Balance: <span></span></h3>
+                        <h3 class="fs-5 my-2">Saving Amount: <span id="saving-amount">00</span></h3>
+                        <h3 class="fs-5 my-2">Remaining Balance: <span id="remaining-amount">00</span></h3>
                     </div>
                   </div>
             </div>
         </section>
     </main>
+    <!-- script file linked src here -->
     <script src="./js/app.js"></script>
 </body>
 </html>
