@@ -1,5 +1,5 @@
-function getInputValue(id) {
-    let value = document.getElementById(id).value;
+function getInputValue(idName) {
+    let value = document.getElementById(idName).value;
     return value;
   }
   //  click handeler button of expense calclulation
